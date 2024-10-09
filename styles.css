@@ -1,0 +1,96 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #004085; /* خلفية زرقاء */
+    color: #ffffff; /* الكتابة باللون الأبيض */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.main-header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #003366;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* قسم البطل (Hero Section) */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: radial-gradient(circle, rgba(0,40,100,1) 0%, rgba(0,20,50,1) 100%);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #28a745; /* زر أخضر */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* تأثير التحويم */
+}
+
+/* شعار فورد المتحرك */
+.ford-logo-container {
+    margin-top: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.ford-logo {
+    width: 200px;
+    animation: spin 5s linear infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* تأثيرات ثلاثية الأبعاد (Neumorphism) للأزرار والصناديق */
+.btn, .hero-section, .main-header {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3), -8px -8px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* تحسينات إضافية */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366;
+    color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+}
