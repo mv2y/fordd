@@ -4,8 +4,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     // بيانات النموذج
     const templateParams = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
+        from_name: document.getElementById('name').value,
+        email_id: document.getElementById('email').value,
         location: document.getElementById('location').value,
         message: document.getElementById('message').value
     };
@@ -18,4 +18,3 @@ document.getElementById('contact-form').addEventListener('submit', function(even
            alert('حدث خطأ أثناء الإرسال. حاول مرة أخرى.');
         });
 });
-emailjs.send("service_nb5trg7","template_xgnmtbg");
